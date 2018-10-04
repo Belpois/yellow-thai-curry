@@ -1,0 +1,14 @@
+{
+  "name": "yellow-thai-curry",
+  "version": "0.0.0",
+  "description": "An attempt to race digital cars into oblivion.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "wtf are tests?"
+  },
+  "author": "Team YTC",
+  "license": "MIT"
+}
