@@ -7,10 +7,12 @@ body {
 	text-align: center;
 }
 
+
+
 .grid > div {
 	margin: 0px;
-	width: 20px;
-	height: 20px;
+	width: 1vw;
+	height: 1vw;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -48,6 +50,15 @@ body {
 	position: relative;
 	margin: 10px auto;
 }
+
+.alert {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 2rem;
+}
+
 
 .output-area button {
 	position: absolute;

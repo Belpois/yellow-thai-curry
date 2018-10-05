@@ -75,6 +75,7 @@ grid.forEach((yElement, yIndex) => {
 });
 
 $(document).on("click", "div > div", function () {
+	$(".alert").hide();
 	const val = $(this).attr("el");
 
 	if (val == "0") {
@@ -85,6 +86,7 @@ $(document).on("click", "div > div", function () {
 	const isValid = checkValid(finalArray);
 
 	if (!isValid) {
+		$(".alert").show().html("Your last action was canceled, as it is invalid!")
 		toggleElement(this);
 	}
 });
