@@ -5,9 +5,8 @@ body {
 
 .grid {
 	text-align: center;
+	background-color: #b6b6b6;
 }
-
-
 
 .grid > div {
 	margin: 0px;
@@ -19,6 +18,7 @@ body {
 	border: 1px solid #0000002b;
 	cursor: pointer;
 }
+
 
 .grid > div:hover {
 	filter: brightness(1.2);
@@ -41,7 +41,8 @@ body {
 }
 
 .selected {
-	background-color: red !important;
+	border-radius: 50%;
+	background-image: radial-gradient(circle, #ff0000, #fe6b00);
 }
 
 .output-area {
