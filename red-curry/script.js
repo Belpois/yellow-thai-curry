@@ -16,7 +16,7 @@ function convertArray2D(array, stride) {
 }
 
 const grid = convertArray2D(data, 96);
-
+hintArray = [];
 
 function checkValid(solution) {
 	var valid = true;
@@ -90,6 +90,38 @@ $(document).on("click", "div > div", function () {
 		toggleElement(this);
 	}
 	$("#total-moves").text("Moves in total: " + finalArray.length);
+});
+
+$(document).on("mouseover", "div > div", function () {	
+	const val = $(this).attr("el");
+
+	if (val == "0") {
+		return;
+	}
+
+	hintArray = [...finalArray];
+
+	const x = $(this).attr("x");
+	const y = $(this).attr("y");
+
+	const isSelected = finalArray.find(item => (item.x == x && item.y == y));
+
+	if (!isSelected) {
+		hintArray.push({ x, y });
+	} else if (hintArray.length) {
+		hintArray = hintArray.filter(item => !(item.x == x && item.y == y));
+	}
+
+	const isValid = checkValid(hintArray);
+
+	
+	isValid ? $(this).addClass("validmove") : $(this).removeClass("validmove");
+	
+	hintArray = [];
+});
+
+$(document).on("mouseout", "div > div", function () {
+	$(this).removeClass("validmove");
 });
 
 $(document).on("click", "button", function () {
