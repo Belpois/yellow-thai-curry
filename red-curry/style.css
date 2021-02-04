@@ -45,6 +45,10 @@ body {
 	background-image: radial-gradient(circle, #ff0000, #fe6b00);
 }
 
+.validmove {
+	background-color: green !important;
+}
+
 .output-area {
 	width: 700px;
 	min-height: 100px;
