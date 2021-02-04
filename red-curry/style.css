@@ -40,12 +40,12 @@ body {
 	background-color: #98ff00;
 }
 
-[el="3"] {
+[el="4"] {
 	background-color: purple;
 }
 
-[el="3"] {
-	background-color: red;
+[el="5"] {
+	background-color: black;
 }
 
 .selected {
@@ -54,7 +54,8 @@ body {
 }
 
 .validmove {
-	background-color: green !important;
+	background-color: lightcoral !important;
+	border-radius: 50%;
 }
 
 .output-area {
@@ -73,11 +74,8 @@ body {
 }
 
 
+
 .output-area button {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 1;
 	font-size: 2.5rem;
 }
 

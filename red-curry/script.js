@@ -124,7 +124,20 @@ $(document).on("mouseout", "div > div", function () {
 	$(this).removeClass("validmove");
 });
 
-$(document).on("click", "button", function () {
+$(document).on("click", "#getjson", function () {
 	$("textarea").val(JSON.stringify(finalArray));
-	alert(finalArray.length);
+});
+
+
+
+$(document).on("click", "#setjson", function () {
+	const newArr = JSON.parse($("textarea").val());
+
+	$("div > div").removeClass("selected");
+	for (const { x, y } of newArr) {
+		toggleElement($(`div[x=${x}][y=${y}]`));
+	}
+
+	$("textarea").val("");
+	$("#total-moves").text("Moves in total: " + finalArray.length);
 });
