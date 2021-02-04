@@ -89,6 +89,7 @@ $(document).on("click", "div > div", function () {
 		$(".alert").show().html("Your last action was canceled, as it is invalid!")
 		toggleElement(this);
 	}
+	$("#total-moves").text("Moves in total: " + finalArray.length);
 });
 
 $(document).on("click", "button", function () {
