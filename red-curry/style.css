@@ -44,6 +44,10 @@ body {
 	background-color: red !important;
 }
 
+.validmove {
+	background-color: green !important;
+}
+
 .output-area {
 	width: 700px;
 	min-height: 100px;
