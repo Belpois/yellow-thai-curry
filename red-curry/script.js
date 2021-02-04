@@ -93,4 +93,5 @@ $(document).on("click", "div > div", function () {
 
 $(document).on("click", "button", function () {
 	$("textarea").val(JSON.stringify(finalArray));
+	alert(finalArray.length);
 });
