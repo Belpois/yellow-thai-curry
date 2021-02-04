@@ -40,6 +40,14 @@ body {
 	background-color: #98ff00;
 }
 
+[el="3"] {
+	background-color: purple;
+}
+
+[el="3"] {
+	background-color: red;
+}
+
 .selected {
 	border-radius: 50%;
 	background-image: radial-gradient(circle, #ff0000, #fe6b00);
